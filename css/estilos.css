@@ -78,4 +78,12 @@ body{
     justify-content: space-between;
 }
 
+ul{
+    list-style: none;
+    text-align: left
+}
+
+h4{
+    text-align: left;
+}
 
