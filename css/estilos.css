@@ -24,14 +24,13 @@ body{
     border-width:4px;
     border-style:solid;
     border-color:red;
-    margin: 1px;
-    display: flex;
-    flex-wrap: nowrap;
+    padding: 10px;
 }
 
 .lineainheader{
     border-width:4px;
     border-style:solid;
+    width: 100%;
     border-color:yellow; 
     margin: 1px;
 }
@@ -52,19 +51,31 @@ body{
     margin: 1px;
 }
 
-.lineapie{
+.cajaSup{
     border-width:4px;
     border-style:solid;
-    border-color:yellow; 
+    border-color:yellow;
     margin: 1px;
+    width: 100%;
 }
 
 .cajaFooter{
     border-width:4px;
     border-style:solid;
     border-color:yellow;
-    margin: 1px;
-    width: 25%;
+    margin: 5px;
+    width: calc(25% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.fila{
+    text-align: center;
+}
+
+.fila:last-child{
+    display: flex;
+    justify-content: space-between;
 }
 
 
