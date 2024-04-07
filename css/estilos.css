@@ -32,7 +32,7 @@ body{
     border-style:solid;
     width: 100%;
     border-color:yellow; 
-    margin: 1px;
+    margin: 5px;
 }
 
 .lineaizq{
@@ -40,7 +40,7 @@ body{
     width: 50%;
     border-style:solid;
     border-color:yellow;
-    margin: 1px;  
+    margin: 5px;  
 }
 
 .lineader{
@@ -48,7 +48,7 @@ body{
     width: 50%;
     border-style:solid;
     border-color:yellow;  
-    margin: 1px;
+    margin: 5px;
 }
 
 .cajaSup{
