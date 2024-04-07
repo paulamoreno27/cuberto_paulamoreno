@@ -6,23 +6,65 @@ body{
     border-width:4px;
     border-style:solid;
     border-color:red;
+    margin: 1px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-.contenido{
+.cajaRoja{
     border-width:4px;
     border-style:solid;
     border-color:red;
+    margin: 1px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .pie{
     border-width:4px;
     border-style:solid;
     border-color:red;
+    margin: 1px;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
-.lineain{
+.lineainheader{
     border-width:4px;
     border-style:solid;
-    border-color:yellow;   
+    border-color:yellow; 
+    margin: 1px;
 }
+
+.lineaizq{
+    border-width:4px;
+    width: 50%;
+    border-style:solid;
+    border-color:yellow;
+    margin: 1px;  
+}
+
+.lineader{
+    border-width:4px;
+    width: 50%;
+    border-style:solid;
+    border-color:yellow;  
+    margin: 1px;
+}
+
+.lineapie{
+    border-width:4px;
+    border-style:solid;
+    border-color:yellow; 
+    margin: 1px;
+}
+
+.cajaFooter{
+    border-width:4px;
+    border-style:solid;
+    border-color:yellow;
+    margin: 1px;
+    width: 25%;
+}
+
 
