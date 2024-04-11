@@ -33,7 +33,6 @@ body{
     border-width:3px;
     padding: 10px;
     font-family: "Roboto", sans-serif;
-    width: 32vw;
     margin: auto;
 }
 
@@ -46,7 +45,13 @@ body{
 .lineaizq{
     border-width:4px;
     width: 50%;
-    margin: 5px;  
+    margin: 10px;  
+}
+
+.lineader{
+    border-width:4px;
+    width: 50%;
+    margin: 5px;
 }
 
 .caja1 {
@@ -61,12 +66,6 @@ body{
     background-color: rgb(236, 246, 245);
 }
 
-.lineader{
-    border-width:4px;
-    width: 50%;
-    margin: 5px;
-}
-
 .cajaSup{
     border-width:4px;
     margin: 2px;
@@ -75,8 +74,7 @@ body{
     margin-top: 40px;
 }
 
-.cajaFooter{
-    width: calc(25% - 20px);
+.cajaFooter1,.cajaFooter2,.cajaFooter3,.cajaFooter4{
     padding: 8px;
     box-sizing: border-box;
     color: white;
@@ -119,14 +117,34 @@ img{
     width: 170px;
     height: 170px;
     border-radius: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
     height: 220px;
-    background-color: black; /* color de fondo */
-    color: white; /* color de letra */
+    background-color: black; 
+    color: white; 
     display: grid;
-    grid-template-rows: 60%, 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+}
+
+.cajaFooter1{
+    grid-area: caja1;
+}
+
+.cajaFooter2{
+    grid-area: caja2;
+}
+
+.cajaFooter3{
+    grid-area: caja3;
+}
+
+.cajaFooter4{
+    grid-area: caja4;
 }
 
 #texto-footer{
@@ -135,4 +153,12 @@ footer{
     font-family: "Roboto", sans-serif;
 }
 
+@media only screen and (max-width: 1256px){
+    .wrapper{
+        width: 100%;
+    }
 
+    .encabezado,.cajaRoja,.fila:last-child,img{
+        display: block;
+    }
+}
