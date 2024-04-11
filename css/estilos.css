@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-body{
-    width: 100%;
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 .wrapper{
@@ -22,11 +24,9 @@ body{
 
 .cajaRoja{
     border-width:4px;
-    margin: 1px;
     display: flex;
     flex-wrap: nowrap;
     font-family: "Roboto", sans-serif;
-
 }
 
 .pie{
@@ -66,27 +66,11 @@ body{
     background-color: rgb(236, 246, 245);
 }
 
-.cajaSup{
-    border-width:4px;
-    margin: 2px;
-    width: 100%;
-    text-align: left;
-    margin-top: 40px;
-}
-
 .cajaFooter1,.cajaFooter2,.cajaFooter3,.cajaFooter4{
     padding: 8px;
     box-sizing: border-box;
     color: white;
     font-size: 10px;
-}
-
-.fila{
-    text-align: center;
-}
-
-.fila:last-child{
-    display: flex;
 }
 
 ul{
@@ -127,8 +111,15 @@ footer{
     background-color: black; 
     color: white; 
     display: grid;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "header header header header"
+    "caja1 caja2 caja3 caja4"; 
+}
+
+.cajaSup{
+    grid-area: header;
 }
 
 .cajaFooter1{
@@ -158,7 +149,30 @@ footer{
         width: 100%;
     }
 
-    .encabezado,.cajaRoja,.fila:last-child,img{
+    .encabezado,.cajaRoja,img{
         display: block;
+    }
+
+    .lineaizq,.lineader{
+        padding-left: 16px;
+    }
+
+    img{
+        display: inline-block;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .foto{
+        text-align: center;
+    }
+
+    footer{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "header header"
+        "caja1 caja2"
+        "caja3 caja4";
     }
 }
